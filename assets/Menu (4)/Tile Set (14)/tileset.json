@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "grid": {
+    "width": 64,
+    "height": 64
+  },
+  "tileProperties": {
+    "0_0": {
+      "property": "?"
+    },
+    "3_5": {
+      "property": "tile for game"
+    }
+  }
+}

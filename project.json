@@ -1,0 +1,297 @@
+{
+  "name": "Ludum",
+  "assets": [
+    {
+      "id": "5",
+      "name": "Game",
+      "type": null,
+      "children": [
+        {
+          "id": "36",
+          "name": "PawnBehavior",
+          "type": "script"
+        },
+        {
+          "id": "49",
+          "name": "PlayerBehavior",
+          "type": "script"
+        },
+        {
+          "id": "61",
+          "name": "HeroBehavior",
+          "type": "script"
+        },
+        {
+          "id": "0",
+          "name": "Main",
+          "type": "scene"
+        },
+        {
+          "id": "12",
+          "name": "Mouse",
+          "type": "script"
+        },
+        {
+          "id": "60",
+          "name": "StorePieceBehavior",
+          "type": "script"
+        },
+        {
+          "id": "40",
+          "name": "MapManager",
+          "type": "script"
+        },
+        {
+          "id": "17",
+          "name": "Game Grid",
+          "type": "tileMap"
+        },
+        {
+          "id": "28",
+          "name": "UI",
+          "type": null,
+          "children": [
+            {
+              "id": "22",
+              "name": "hero image",
+              "type": "sprite"
+            },
+            {
+              "id": "21",
+              "name": "lifebar",
+              "type": "sprite"
+            },
+            {
+              "id": "20",
+              "name": "life",
+              "type": "sprite"
+            },
+            {
+              "id": "16",
+              "name": "Player1",
+              "type": "sprite"
+            },
+            {
+              "id": "13",
+              "name": "UI bg",
+              "type": "sprite"
+            },
+            {
+              "id": "32",
+              "name": "market",
+              "type": "sprite"
+            },
+            {
+              "id": "52",
+              "name": "pixle ehart",
+              "type": "sprite"
+            },
+            {
+              "id": "54",
+              "name": "unit1",
+              "type": "sprite"
+            },
+            {
+              "id": "55",
+              "name": "unit2",
+              "type": "sprite"
+            },
+            {
+              "id": "56",
+              "name": "unit3",
+              "type": "sprite"
+            },
+            {
+              "id": "53",
+              "name": "heart",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "30",
+          "name": "alagard",
+          "type": "font"
+        },
+        {
+          "id": "31",
+          "name": "UIscript",
+          "type": "script"
+        },
+        {
+          "id": "38",
+          "name": "SocketIOManager",
+          "type": "script"
+        },
+        {
+          "id": "39",
+          "name": "test",
+          "type": "script"
+        },
+        {
+          "id": "45",
+          "name": "Sprites",
+          "type": null,
+          "children": [
+            {
+              "id": "46",
+              "name": "AtkSqr",
+              "type": "sprite"
+            },
+            {
+              "id": "47",
+              "name": "MovSqr",
+              "type": "sprite"
+            },
+            {
+              "id": "1",
+              "name": "Beelze",
+              "type": "sprite"
+            },
+            {
+              "id": "51",
+              "name": "Mammon",
+              "type": "sprite"
+            },
+            {
+              "id": "78",
+              "name": "Lucifer",
+              "type": "sprite"
+            },
+            {
+              "id": "77",
+              "name": "Satan",
+              "type": "sprite"
+            },
+            {
+              "id": "57",
+              "name": "Levia",
+              "type": "sprite"
+            },
+            {
+              "id": "58",
+              "name": "oldman",
+              "type": "sprite"
+            },
+            {
+              "id": "59",
+              "name": "oldmanpiece",
+              "type": "sprite"
+            },
+            {
+              "id": "71",
+              "name": "oldmanpiece2",
+              "type": "sprite"
+            },
+            {
+              "id": "79",
+              "name": "indecator",
+              "type": "sprite"
+            },
+            {
+              "id": "82",
+              "name": "GreenBackground",
+              "type": "sprite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Menu",
+      "type": null,
+      "children": [
+        {
+          "id": "3",
+          "name": "menu",
+          "type": "scene"
+        },
+        {
+          "id": "29",
+          "name": "Sprite2",
+          "type": "sprite"
+        },
+        {
+          "id": "10",
+          "name": "Sprite",
+          "type": "sprite"
+        },
+        {
+          "id": "14",
+          "name": "Tile Set",
+          "type": "tileSet"
+        },
+        {
+          "id": "11",
+          "name": "Startup",
+          "type": "script"
+        },
+        {
+          "id": "74",
+          "name": "menubg",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "name": "Assets",
+      "type": null,
+      "children": [
+        {
+          "id": "42",
+          "name": "Wood Sound",
+          "type": "sound"
+        },
+        {
+          "id": "62",
+          "name": "bgmusic1",
+          "type": "sound"
+        },
+        {
+          "id": "65",
+          "name": "bgmusic2",
+          "type": "sound"
+        },
+        {
+          "id": "64",
+          "name": "bgmusic3",
+          "type": "sound"
+        },
+        {
+          "id": "66",
+          "name": "justdrums",
+          "type": "sound"
+        }
+      ]
+    },
+    {
+      "id": "68",
+      "name": "Tutorial",
+      "type": null,
+      "children": [
+        {
+          "id": "70",
+          "name": "tutorial",
+          "type": "scene"
+        },
+        {
+          "id": "80",
+          "name": "tutorial2",
+          "type": "scene"
+        },
+        {
+          "id": "72",
+          "name": "NextButtonBehavior",
+          "type": "script"
+        },
+        {
+          "id": "81",
+          "name": "BackButtonBehavior",
+          "type": "script"
+        }
+      ]
+    }
+  ]
+}
