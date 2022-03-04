@@ -37,6 +37,9 @@ environment {
     -e SEMGREP_REPO_URL=$SEMGREP_REPO_URL \
     -e SEMGREP_BRANCH=$SEMGREP_BRANCH \
     -e SEMGREP_REPO_NAME=$SEMGREP_REPO_NAME \
+    -e SEMGREP_BRANCH=$SEMGREP_BRANCH \
+    -e SEMGREP_COMMIT=$SEMGREP_COMMIT \
+    -e SEMGREP_PR_ID=$SEMGREP_PR_ID \
     -v "$(pwd):$(pwd)" --workdir $(pwd) \
     returntocorp/semgrep-agent:v1 semgrep-agent --publish-token $SEMGREP_APP_TOKEN '''
         }
