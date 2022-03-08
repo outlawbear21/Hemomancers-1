@@ -2,7 +2,7 @@ pipeline {
   agent any
 environment {
     // SEMGREP_RULES = "p/security-audit p/secrets" // more at semgrep.dev/explore
-    // SEMGREP_BASELINE_REF = "origin/${env.CHANGE_TARGET}"
+    // SEMGREP_BASELINE_REF = "master"
 
     // == Optional settings in the `environment {}` block
 
