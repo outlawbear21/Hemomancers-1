@@ -2,7 +2,7 @@ pipeline {
   agent any
 environment {
     // SEMGREP_RULES = "p/security-audit p/secrets" // more at semgrep.dev/explore
-    SEMGREP_BASELINE_REF = "origin/${env.CHANGE_TARGET}"
+    // SEMGREP_BASELINE_REF = "origin/${env.CHANGE_TARGET}"
 
     // == Optional settings in the `environment {}` block
 
@@ -32,16 +32,9 @@ environment {
             sh 'echo $SEMGREP_BRANCH'
             sh 'echo $SEMGREP_COMMIT'
             sh 'ls -la'
-            sh '''docker pull returntocorp/semgrep-agent:v1 && \
-    docker run \
-    -e SEMGREP_REPO_URL=$SEMGREP_REPO_URL \
-    -e SEMGREP_BRANCH=$SEMGREP_BRANCH \
-    -e SEMGREP_REPO_NAME=$SEMGREP_REPO_NAME \
-    -e SEMGREP_BRANCH=$SEMGREP_BRANCH \
-    -e SEMGREP_COMMIT=$SEMGREP_COMMIT \
-    -e SEMGREP_PR_ID=$SEMGREP_PR_ID \
-    -v "$(pwd):$(pwd)" --workdir $(pwd) \
-    returntocorp/semgrep-agent:v1 semgrep-agent --publish-token $SEMGREP_APP_TOKEN '''
+            sh 'pip3 install semgrep==0.81.0'
+            sh 'pip3 install semgrep-agent==0.1.0b2'
+            sh 'semgrep-agent --publish-token $SEMGREP_APP_TOKEN'
         }
     }
   }
