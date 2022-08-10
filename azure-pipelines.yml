@@ -22,8 +22,8 @@ steps:
     pip install semgrep
     semgrep ci 
     printenv
-  # env: 
-    # SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
+  env: 
+    SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
     # SEMGREP_COMMIT: $(Build.SourceVersion)
 
 - script: |
