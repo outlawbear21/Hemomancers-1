@@ -14,8 +14,10 @@ pool:
 variables:
 - group: Semgrep app token group
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: |
+    export $SEMGREP_PR_ID=System.PullRequest.PullRequestId
+    printenv
+  displayName: 'Set environment variables'
 
 - script: |
     python -m pip install --upgrade pip
