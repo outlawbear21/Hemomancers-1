@@ -6,14 +6,10 @@
 trigger:
 - master
 
-pr:
-- master
-
 pool:
   vmImage: ubuntu-latest
 variables:
 - group: Semgrep app token group
-
 
 steps: 
 
@@ -21,12 +17,5 @@ steps:
     python -m pip install --upgrade pip
     pip install semgrep
     semgrep ci 
-    printenv
   env: 
     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
-    # SEMGREP_COMMIT: $(Build.SourceVersion)
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
