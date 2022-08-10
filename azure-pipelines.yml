@@ -22,7 +22,7 @@ steps:
     pip install semgrep
     semgrep ci 
     printenv
-  env: 
+  # env: 
     # SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
     # SEMGREP_COMMIT: $(Build.SourceVersion)
 
