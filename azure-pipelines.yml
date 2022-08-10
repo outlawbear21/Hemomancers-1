@@ -15,7 +15,7 @@ variables:
 - group: Semgrep app token group
 steps:
 - script: |
-    export $SEMGREP_PR_ID=System.PullRequest.PullRequestId
+    export $SEMGREP_PR_ID=System.System.PullRequest.PullRequestNumber
     printenv
   displayName: 'Set environment variables'
 
