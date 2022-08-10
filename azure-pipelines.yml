@@ -29,7 +29,7 @@ steps:
     echo $(System.PullRequest.PullRequestNumber)
     printenv
   env: 
-    SEMGREP_PR_ID: $(System.PullRequest.PullRequestId)
+    SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
     TEST_ENV: "hahahahah testing hahahahaha"
 
 - script: |
