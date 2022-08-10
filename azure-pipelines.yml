@@ -15,11 +15,7 @@ variables:
 - group: Semgrep app token group
 
 
-steps:
-- script: |
-    export $SEMGREP_PR_ID=System.System.PullRequest.PullRequestNumber
-    printenv
-  displayName: 'Set environment variables'
+steps: 
 
 - script: |
     python -m pip install --upgrade pip
@@ -30,6 +26,7 @@ steps:
     printenv
   env: 
     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
+    SEMGREP_COMMIT: $(Build.SourceVersion)
     TEST_ENV: "hahahahah testing hahahahaha"
 
 - script: |
