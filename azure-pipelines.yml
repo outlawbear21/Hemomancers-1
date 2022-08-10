@@ -23,6 +23,10 @@ steps:
     python -m pip install --upgrade pip
     pip install semgrep
     semgrep ci 
+    printenv
+  env: 
+    SEMGREP_PR_ID: $(System.PullRequest.PullRequestId)
+    TEST_ENV: "hahahahah testing hahahahaha"
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
