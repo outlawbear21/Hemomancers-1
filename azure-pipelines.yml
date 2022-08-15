@@ -11,8 +11,8 @@ pr:
 
 pool:
   vmImage: ubuntu-latest
-variables:
-- group: Semgrep app token group
+# variables:
+# - group: Semgrep app token group
 
 steps: 
 
