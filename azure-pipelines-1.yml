@@ -18,4 +18,3 @@ steps:
     semgrep ci
   env: 
     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
-  displayName: 'Run a full Semgrep scan of the default branch every day at Midnight'.
