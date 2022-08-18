@@ -15,12 +15,11 @@ variables:
 
 steps: 
 
-- script: git fetch origin 'hm/azure-pr-test-2'
-
-# - script: |
-#     python -m pip install --upgrade pip
-#     pip install semgrep
-#     semgrep ci
-#   env: 
-#     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
-#     SEMGREP_BASELINE_REF: 'hm/azure-pr-test-2'
+- script: |
+    git fetch origin 'hm/azure-pr-test-2'
+    python -m pip install --upgrade pip
+    pip install semgrep
+    semgrep ci
+  env: 
+    SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
+    SEMGREP_BASELINE_REF: 'hm/azure-pr-test-2'
