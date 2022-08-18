@@ -1,3 +1,5 @@
+trigger:
+ - master
 
 pool:
   vmImage: ubuntu-latest
@@ -9,6 +11,7 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install semgrep
-    semgrep ci 
+    semgrep ci
   env: 
     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
+    SEMGREP_BASELINE_REF: 'master'
