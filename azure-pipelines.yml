@@ -6,6 +6,13 @@ pool:
 variables:
 - group: Semgrep app token group
 
+# resources:
+#   repositories:
+#   - repository: Hemomancers-1 # The name used to reference this repository in the checkout step
+#     type: github
+#     name: holdenmcg/Hemomancers-1
+#     ref: master
+
 steps: 
 
 - script: |
@@ -14,4 +21,4 @@ steps:
     semgrep ci
   env: 
     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
-    SEMGREP_BASELINE_REF: 'master'
+    SEMGREP_BASELINE_REF: 'hm/azure-pr-test-2'
