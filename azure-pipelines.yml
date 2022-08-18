@@ -22,4 +22,4 @@ steps:
     semgrep ci
   env: 
     SEMGREP_PR_ID: $(System.PullRequest.PullRequestNumber)
-    SEMGREP_BASELINE_REF: 'hm/azure-pr-test-2'
+    SEMGREP_BASELINE_REF: 'origin/hm/azure-pr-test-2'
