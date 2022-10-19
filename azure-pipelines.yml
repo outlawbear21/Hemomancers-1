@@ -18,3 +18,4 @@ steps:
     pip install semgrep
     printenv
     SEMGREP_PR_ID=${SYSTEM_PULLREQUEST_PULLREQUESTNUMBER} semgrep ci
+    printenv
