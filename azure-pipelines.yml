@@ -14,8 +14,11 @@ variables:
 steps: 
 
 - script: |
+    git fetch origin master
     python -m pip install --upgrade pip
     pip install semgrep
     printenv
     SEMGREP_PR_ID=${SYSTEM_PULLREQUEST_PULLREQUESTNUMBER} semgrep ci
     printenv
+  env:
+    SEMGREP_BASELINE_REF: 'origin/master'
